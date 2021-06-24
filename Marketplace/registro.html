@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Registro Usuarios</title>
+    <link rel="stylesheet" href="css/registro.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+  </head>
+
+  <body>
+    <header class="principal-encabezado">
+      <h1 id="logo-principal"><i>BOVENTAS.com</i></h1>
+    </header>
+    <div class="login-box">
+      <h1>REGISTRATE YA!</h1>
+      <form id="form-registro" method="POST">
+        <label for="form-nombres">Nombres</label>
+        <input
+          id="form-nombres"
+          name="form-nombres"
+          type="text"
+          placeholder="Ingrese sus Nombres"
+        />
+
+        <label for="form-apellidos">Apellidos</label>
+        <input
+          id="form-apellidos"
+          name="form-apellidos"
+          type="text"
+          placeholder="Apellidos"
+        />
+
+        <label for="form-password">Contraseña</label>
+        <input
+          id="form-password"
+          name="form-password"
+          type="password"
+          placeholder="Ingrese una Contraseña"
+        />
+
+        <label for="form-email">Email</label>
+        <input
+          id="form-email"
+          name="form-email"
+          type="text"
+          placeholder="Ingrese su email"
+        />
+
+        <label for="form-telefono">Telefono</label>
+        <input
+          id="form-telefono"
+          name="form-telefono"
+          type="text"
+          placeholder="Ingrese su telefono"
+        />
+
+        <input
+          type="hidden"
+          name="form-peticion"
+          id="form-peticion"
+          value="create"
+        />
+        <input
+          id="form-registrarUsuario"
+          name="form-registrarUsuario"
+          type="submit"
+          value="Registrar Usuario"
+        />
+      </form>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/usuario/registro.js"></script>
+  </body>
+</html>

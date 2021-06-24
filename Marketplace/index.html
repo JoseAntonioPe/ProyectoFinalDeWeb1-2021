@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/escritorio.css" />
+    <link rel="stylesheet" href="css/banner.css" />
+    <title>BOVENTAS</title>
+  </head>
+
+  <body>
+    <header id="cabecera">
+      <div>
+        <a href="index.html">
+          <img
+            src="imagenes/logo.png"
+            alt="logo-web"
+            style="width: 4.5em; height: 4.5em"
+          />
+        </a>
+      </div>
+      <form action="busqueda.html">
+        <input type="search" name="busqueda" id="busqueda" />
+        <button type="submit" id="btn-buscar">Buscar</button>
+      </form>
+      <div>
+        <a id="btn-publicar" href="mis-anuncios.html">Publicar</a>
+        <a id="btn-login" href="login.html">Login</a>
+        <a id="btn-salir" href="">Salir</a>
+      </div>
+    </header>
+    <nav id="navegacion">
+      <ul>
+        <li><a href="categoria.html?id_categoria=1">Cocina</a></li>
+        <li><a href="categoria.html?id_categoria=2">Electronicos</a></li>
+        <li><a href="categoria.html?id_categoria=3">Entretenimiento</a></li>
+        <li><a href="categoria.html?id_categoria=4">Indumentaria</a></li>
+        <li><a href="categoria.html?id_categoria=5">Inmuebles</a></li>
+        <li><a href="categoria.html?id_categoria=6">Vehiculos</a></li>
+      </ul>
+    </nav>
+    <div class="banner"></div>
+
+    <main id="contenedor_principal">
+      <div class="seccion-encabezado">
+        <h1>Anuncios por categorias</h1>
+      </div>
+      <section class="seccion-contenedor">
+        <article>
+          <header>
+            <h3>Vehiculos</h3>
+          </header>
+          <div>
+            <img src="imagenes/vehiculos/auto3.jpg" alt="producto-imagen" />
+          </div>
+          <footer>
+            <a href="categoria.html?id_categoria=6">Ver Anuncios</a>
+          </footer>
+        </article>
+        <article>
+          <header>
+            <h3>Inmuebles</h3>
+          </header>
+          <div>
+            <img src="imagenes/casas/casa2.jpg" alt="producto-imagen" />
+          </div>
+          <footer>
+            <a href="categoria.html?id_categoria=5">Ver Anuncios</a>
+          </footer>
+        </article>
+        <article>
+          <header>
+            <h3>Indumentaria</h3>
+          </header>
+          <div>
+            <img src="imagenes/indumentaria/ropa3.jpg" alt="producto-imagen" />
+          </div>
+          <footer>
+            <a href="categoria.html?id_categoria=4"> Ver Anuncios </a>
+          </footer>
+        </article>
+
+        <article>
+          <header>
+            <h3>Entretenimiento</h3>
+          </header>
+          <div>
+            <img
+              src="imagenes/entretenimiento/uno.webp"
+              alt="producto-imagen"
+            />
+          </div>
+          <footer>
+            <a href="categoria.html?id_categoria=3">Ver Anuncios</a>
+          </footer>
+        </article>
+
+        <article>
+          <header>
+            <h3>Electronicos</h3>
+          </header>
+          <div>
+            <img src="imagenes/electronicos/tv.png" alt="producto-imagen" />
+          </div>
+          <footer>
+            <a href="categoria.html?id_categoria=2">Ver Anuncios</a>
+          </footer>
+        </article>
+
+        <article>
+          <header>
+            <h3>Cocina</h3>
+          </header>
+          <div>
+            <img src="imagenes/cocina/olla.jpg" alt="producto-imagen" />
+          </div>
+          <footer>
+            <a href="categoria.html?id_categoria=1">Ver Anuncios</a>
+          </footer>
+        </article>
+      </section>
+    </main>
+
+    <footer id="pie-pagina">
+      <div>
+        <p>©2021 BoVentas Santa Cruz, Bolivia</p>
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/principal.js"></script>
+    <script src="js/usuario/verificarUsuario.js"></script>
+  </body>
+</html>

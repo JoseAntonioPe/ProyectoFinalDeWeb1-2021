@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOVENTAS</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/escritorio.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+  </head>
+  <body>
+    <header id="cabecera">
+      <div>
+        <a href="index.html">
+          <img
+            src="imagenes/logo.png"
+            alt="logo-web"
+            style="width: 4.5em; height: 4.5em"
+          />
+        </a>
+      </div>
+      <form action="busqueda.html">
+        <input type="search" name="busqueda" id="busqueda" />
+        <button type="submit" id="btn-buscar">Buscar</button>
+      </form>
+      <div>
+        <a id="btn-publicar" href="mis-anuncios.html">Publicar</a>
+        <a id="btn-login" href="login.html">Login</a>
+        <a id="btn-salir" href="">Salir</a>
+      </div>
+    </header>
+    <nav id="navegacion">
+      <ul>
+        <li><a href="categoria.html?id_categoria=1">Cocina</a></li>
+        <li><a href="categoria.html?id_categoria=2">Electronicos</a></li>
+        <li><a href="categoria.html?id_categoria=3">Entretenimiento</a></li>
+        <li><a href="categoria.html?id_categoria=4">Indumentaria</a></li>
+        <li><a href="categoria.html?id_categoria=5">Inmuebles</a></li>
+        <li><a href="categoria.html?id_categoria=6">Vehiculos</a></li>
+      </ul>
+    </nav>
+
+    <div class="seccion-encabezado" style="margin-bottom: 2em">
+      <h1>Mis Anuncios</h1>
+      <!-- Abrir Modal -->
+      <button id="myBtn">Nuevo Anuncio</button>
+    </div>
+    <div
+      id="contenedor_anuncio"
+      style="padding-left: 1em; padding-right: 1em"
+    ></div>
+    <div id="div__image"></div>
+
+    <!-- El Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Nuevo Anuncio</h2>
+        </div>
+        <form id="form_anuncio">
+          <div class="modal-body">
+            <div>
+              <input
+                type="text"
+                name="titulo"
+                id="titulo"
+                placeholder="Titulo del Anuncio"
+              />
+            </div>
+            <div>
+              <label for="descripcion">Descripcion: </label>
+              <br />
+              <textarea
+                name="descripcion"
+                id="descripcion"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+            <div>
+              <label for="categoria">Elija una Categoria: </label>
+              <br />
+              <select name="categoria" id="categoria"></select>
+            </div>
+            <div>
+              <label for="precio">Precio en Bs. </label>
+              <br />
+              <input type="text" name="precio" id="precio" />
+            </div>
+            <div>
+              <label for="fotografia" id="label_fotografia"
+                >Subir fotografia</label
+              >
+              <br />
+              <input type="file" name="fotografia" id="fotografia" />
+            </div>
+            <div>
+              <label for="habilitado">Estado: </label>
+              <br />
+              <select name="habilitado" id="habilitado">
+                <option value="1" selected>Habilitado</option>
+                <option value="0">No Habilitado</option>
+              </select>
+            </div>
+            <div>
+              <input type="hidden" name="id_anuncio" id="id_anuncio" />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div>
+              <button type="submit" name="btn_registrar" id="btn_registrar">
+                Registrar
+              </button>
+              <button
+                type="submit"
+                name="btn_modificar_anuncio"
+                id="btn_modificar_anuncio"
+              >
+                Modificar
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer id="pie-pagina">
+      <div>
+        <p>©2021 BoVentas Santa Cruz, Bolivia</p>
+      </div>
+    </footer>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/anuncio/mis-anuncios.js"></script>
+    <script src="js/usuario/verificarUsuario.js"></script>
+  </body>
+</html>

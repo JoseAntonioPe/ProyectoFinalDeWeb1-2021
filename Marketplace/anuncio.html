@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/escritorio.css" />
+    <link rel="stylesheet" href="css/anuncio.css" />
+    <title>BOVENTAS</title>
+  </head>
+  <body>
+    <header id="cabecera">
+      <div>
+        <a href="index.html">
+          <img
+            src="imagenes/logo.png"
+            alt="logo-web"
+            style="width: 4.5em; height: 4.5em"
+          />
+        </a>
+      </div>
+      <form action="busqueda.html">
+        <input type="search" name="busqueda" id="busqueda" />
+        <button type="submit" id="btn-buscar">Buscar</button>
+      </form>
+      <div>
+        <a id="btn-publicar" href="mis-anuncios.html">Publicar</a>
+        <a id="btn-login" href="login.html">Login</a>
+        <a id="btn-salir" href="">Salir</a>
+      </div>
+    </header>
+    <nav id="navegacion">
+      <ul>
+        <li><a href="categoria.html?id_categoria=1">Cocina</a></li>
+        <li><a href="categoria.html?id_categoria=2">Electronicos</a></li>
+        <li><a href="categoria.html?id_categoria=3">Entretenimiento</a></li>
+        <li><a href="categoria.html?id_categoria=4">Indumentaria</a></li>
+        <li><a href="categoria.html?id_categoria=5">Inmuebles</a></li>
+        <li><a href="categoria.html?id_categoria=6">Vehiculos</a></li>
+      </ul>
+    </nav>
+    <main id="contenedor_principal">
+      <div id="contenedor_info_anuncio"></div>
+    </main>
+    <footer id="pie-pagina">
+      <div>
+        <p>©2021 BoVentas Santa Cruz, Bolivia</p>
+      </div>
+    </footer>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/anuncio/anuncio.js"></script>
+    <script src="js/usuario/verificarUsuario.js"></script>
+  </body>
+</html>

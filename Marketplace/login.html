@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>LOGIN DE USUARIOS</title>
+    <link rel="stylesheet" href="css/login.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0"
+    />
+  </head>
+
+  <body>
+    <header class="principal-encabezado">
+      <h1 id="logo-principal"><i>BOVENTAS.com</i></h1>
+    </header>
+    <div class="login-box">
+      <h1>INGRESE SU CUENTA</h1>
+      <form id="form-login" method="POST">
+        <label for="login-email">Email</label>
+        <input
+          id="login-email"
+          name="login-email"
+          type="text"
+          placeholder="Ingrese su Email"
+        />
+
+        <label for="login-password">Contraseña</label>
+        <input
+          id="login-password"
+          name="login-password"
+          type="password"
+          placeholder="Ingrese su Contraseña"
+        />
+
+        <input
+          id="login-iniciarSesion"
+          name="login-iniciarSesion"
+          type="submit"
+          value="LOGIN"
+        />
+
+        <a href="registro.html">No tienes cuenta?</a>
+      </form>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/usuario/login.js"></script>
+  </body>
+</html>
